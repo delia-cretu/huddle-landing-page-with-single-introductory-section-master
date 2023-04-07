@@ -4,19 +4,18 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Page layout using Bootstrap */
-
-.main {
-  margin: 50px 100px 50px 70px;
+main {
+  margin: 50px 70px 50px 70px;
 }
 
-/* Styling */
+/* Styling the Header */
 
 #section-header img {
   width: 200px;
   margin-bottom: 70px;
-  border: 2px solid red;
 }
+
+/* Styling the Body */
 
 #section-content {
   color: white;
@@ -26,17 +25,22 @@ body {
 }
 
 #content-image {
-  margin-top: 25px;
+  margin-top: 210px;
   border: 2px solid red;
+  position: relative;
 }
 
 #content-image img {
-  width: 91%;
+  width: 92%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 #content-text {
-  margin-top: 75px;
-  width: 35%;
+  margin-top: 80px;
+  width: 36%;
   border: 2px solid red;
 }
 
@@ -46,7 +50,7 @@ body {
 
 #content-text p {
   font-style: normal;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   padding: 15px 0px 5px;
 }
@@ -54,15 +58,18 @@ body {
 .button {
   background-color: white;
   color: #674baf;
-  border-radius: 15%;
-  width: 150px;
+  border-radius: 30px;
+  width: 175px;
   height: 50px;
 }
 
 .button:hover {
   background-color: #e882e8;
+  border-color: #e882e8;
   color: white;
 }
+
+/* Styling the Footer */
 
 /* Media query for mobile responsive background */
 

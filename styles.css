@@ -5,6 +5,17 @@ body {
   margin: 3% 5% 3% 5%;
 }
 
+@media (max-width: 800px) {
+  body {
+    background-color: #674baf;
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    /*margin: 50px 40px 50px 40px; */
+    margin: 3% 5% 3% 5%;
+  }
+}
+
 /* Styling the Header */
 
 header img {
@@ -70,24 +81,7 @@ main {
   color: white;
 }
 
-.footer svg:hover {
-  fill: hsl(322, 100%, 66%);
-  border: 2px solid hsl(322, 100%, 66%);
-}
-
-/* Styling the Footer */
-
-/* Media query for mobile responsive background */
-
 @media (max-width: 800px) {
-  body {
-    background-color: #674baf;
-    background-image: url("images/bg-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    /*margin: 50px 40px 50px 40px; */
-    margin: 3% 5% 3% 5%;
-  }
   main {
     flex-direction: column;
     max-height: 850px;
@@ -107,6 +101,31 @@ main {
     max-height: 100%;
     top: 0;
     transform: translate(-50%, 0%);
+  }
+}
+
+/* FOOTER */
+
+footer svg {
+  height: 30px;
+  width: 30px;
+  fill: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+footer svg:hover {
+  fill: hsl(322, 100%, 66%);
+  border: 2px solid hsl(322, 100%, 66%);
+}
+
+/* Media query for mobile responsive background */
+
+@media (max-width: 800px) {
+  footer {
+    text-align: center;
   }
 }
 
